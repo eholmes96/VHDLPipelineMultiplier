@@ -1,0 +1,75 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+USE ieee.std_logic_signed.all;
+
+ENTITY exh_inpipe_vhdl IS
+	PORT(Mcand			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  mPlier0		:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  Clock			:IN STD_LOGIC;
+		  Output			:OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+	 End exh_inpipe_vhdl;
+	 
+ARCHITECTURE structure OF exh_inpipe_vhdl IS
+
+	SIGNAL mcout0		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL and2add0		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL ph2add0		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mp2mp0		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL addout0		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL addCout0		: STD_LOGIC_VECTOR;
+	
+	SIGNAL PH1in		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mp1in		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mcout1		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL and2add1	: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL ph2add1		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mp2mp1		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL addout1		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL addCout1	: STD_LOGIC_VECTOR;
+	
+	COMPONENT exh_4bAND IS
+		PORT (in4b 			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+				in1b			:IN STD_LOGIC;
+				out4b			:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+	END COMPONENT;	  
+		  
+			
+	COMPONENT exh_4bADD IS
+		PORT (x,y		: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+				Cin		: IN STD_LOGIC;
+				s			: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+				Cout		: OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT exh_reg_vhdl IS
+		PORT(Input			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			  Clock			:IN STD_LOGIC;
+			  Output			:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+		END COMPONENT;
+		
+
+BEGIN
+		
+--stage 1
+	Mcreg0 : exh_reg_vhdl PORT MAP(Mcand, Clock, mcout0);
+	PH0	 : exh_reg_vhdl PORT MAP("0000", Clock, ph2add0);
+	mpreg0 : exh_reg_vhdl PORT MAP(mPlier0, Clock, mp2mp0);
+	AND0   : exh_4bAND 	 PORT MAP(mcout0, mp2mp(0), and2add0);
+	ADD0	 : exh_4bADD	 PORT MAP(and2add0, ph2add0, '0', addout0, addCout0);
+	
+--stage 2
+	Mcreg1 : exh_reg_vhdl PORT MAP(mcout0, Clock, mcout1);
+		PH1in(3) <= addCout0;
+		PH1in(2 DOWNTO 0) <= addout (3 DOWNTO 1);	
+		mp1in(3) <= addout(0)
+		mp1in(2 DOWNTO 0) <= mp2mp(3 DOWNTO 1);
+	PH1	 : exh_reg_vhdl PORT MAP(PH1in, Clock, ph2add1);
+	mpreg1 : exh_reg_vhdl PORT MAP(mp1in, Clock, mp2mp1);
+	AND1   : exh_4bAND PORT MAP(mcout1, mp2mp1(0), and2add1);
+	ADD1   : exh_4bADD PORT MAP(add2add1, ph2add1, '0', addout1, addCout1);
+	
+	
+	
+
+
+	

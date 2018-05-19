@@ -1,0 +1,48 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+USE ieee.std_logic_signed.all;
+
+ENTITY exh_pipe1_vhdl IS
+	PORT(Mcand			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  mPlier0		:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  Output			:OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+	 End exh_pipe1_vhdl;
+	 
+ARCHITECTURE structure OF exh_pipe1_vhdl IS
+
+	SIGNAL mc2and		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mc2mc		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL and2add		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL ph2add		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mp2mp		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL addout		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL addCout		: STD_LOGIC_VECTOR;
+	
+	COMPONENT exh_4bAND IS
+		PORT (in4b 			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+				in1b			:IN STD_LOGIC;
+				out4b			:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+	END COMPONENT;	  
+		  
+			
+	COMPONENT exh_4bADD IS
+		PORT (x,y		: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+				Cin		: IN STD_LOGIC;
+				s			: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+				Cout		: OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT exh_reg_vhdl IS
+		PORT(Input			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			  Clock			:IN STD_LOGIC;
+			  Output			:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+		END COMPONENT;
+		
+
+BEGIN
+		
+		
+	M
+	
+	
+	

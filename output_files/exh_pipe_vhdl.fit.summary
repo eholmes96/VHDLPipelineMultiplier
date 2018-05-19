@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 17 20:11:29 2016
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
+Revision Name : exh_pipe_vhdl
+Top-level Entity Name : exh_mul12_emu_vhdl
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 51 / 22,320 ( < 1 % )
+    Total combinational functions : 41 / 22,320 ( < 1 % )
+    Dedicated logic registers : 38 / 22,320 ( < 1 % )
+Total registers : 38
+Total pins : 13 / 154 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

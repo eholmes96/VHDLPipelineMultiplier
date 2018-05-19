@@ -1,0 +1,49 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+USE ieee.std_logic_signed.all;
+
+ENTITY exh_pipe_vhdl_tb IS
+	END exh_pipe_vhdl_tb;
+	
+ARCHITECTURE Behavior OF exh_pipe_vhdl_tb IS
+
+	COMPONENT exh_pipe_vhdl
+		PORT(Mcand			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  PH0				:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  mPlier0		:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  M4		 		:OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  PH4				:OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  mPlier4		:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+	 End Component;
+	 
+	SIGNAL Mcand_tb 		:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL PH0_tb 			:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mPlier0_tb 	:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL M4_tb		 	:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL PH4_tb			:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL mPlier4_tb 	:STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+BEGIN
+
+uut: exh_pipe_vhdl PORT MAP(Mcand => Mcand_tb, PH0 => PH0_tb, 
+							mPlier0 => mPlier_tb, M4 => M4_tb, PH4=> PH4_tb, 
+							mPlier4 => mPlier4_tbz);
+							
+tb : PROCESS
+				
+				CONSTANT period : time := 20ns;
+				BEGIN 
+				
+						Mcand_tb <= "0000";
+						PH0_tb <= "0000";
+						mPlier0_tb <= "0000";
+				
+				WAIT FOR period;
+				
+				WAIT;
+			END PROCESS;
+END Behavior;
+				
+				
+	
+	

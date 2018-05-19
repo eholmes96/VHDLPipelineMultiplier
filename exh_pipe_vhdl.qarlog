@@ -1,0 +1,23 @@
+Quartus II Archive log --	C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.qarlog
+
+Archive:	C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.qar
+Date:		Tue May 17 20:20:25 2016
+Quartus II 64-Bit		15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/SDC1.sdc
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_4bADD.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_4bAND.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_alu_vhdl.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_inpipe_vhdl.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_mul12_emu_vhdl.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.qpf
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.qsf
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl_assignment_defaults.qdf
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl_tb.vhd
+C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_reg_vhdl.vhd
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

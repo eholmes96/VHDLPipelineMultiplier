@@ -1,0 +1,134 @@
+# Reading E:/Quartus/modelsim/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do exh_pipe_vhdl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying E:/Quartus/modelsim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:/Quartus/modelsim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:36 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_pipe_vhdl
+# -- Compiling architecture Structure of exh_pipe_vhdl
+# End time: 19:28:36 on May 17,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_4bAND.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:36 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_4bAND.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_4bAND
+# -- Compiling architecture Structure of exh_4bAND
+# End time: 19:28:36 on May 17,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_4bADD.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:36 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_4bADD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_4bADD
+# -- Compiling architecture Behavior of exh_4bADD
+# End time: 19:28:37 on May 17,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_mul12_emu_vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:37 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_mul12_emu_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_mul12_emu_vhdl
+# -- Compiling architecture Structure of exh_mul12_emu_vhdl
+# End time: 19:28:37 on May 17,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_reg_vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:37 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_reg_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_reg_vhdl
+# -- Compiling architecture behavior of exh_reg_vhdl
+# End time: 19:28:37 on May 17,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_inpipe_vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:37 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_inpipe_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_inpipe_vhdl
+# -- Compiling architecture structure of exh_inpipe_vhdl
+# End time: 19:28:37 on May 17,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:28:37 on May 17,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity exh_pipe_vhdl_tb
+# -- Compiling architecture Behavior of exh_pipe_vhdl_tb
+# ** Warning: C:/Users/evholmes/OneDrive/Documents/2nd Year 2nd Sem/DSII/exh_pipe_vhdl/exh_pipe_vhdl_tb.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:28:37 on May 17,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  exh_pipe_vhdl_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" exh_pipe_vhdl_tb 
+# Start time: 19:28:37 on May 17,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.exh_pipe_vhdl_tb(behavior)
+# Loading work.exh_pipe_vhdl(structure)
+# Loading work.exh_inpipe_vhdl(structure)
+# Loading work.exh_reg_vhdl(behavior)
+# Loading work.exh_4band(structure)
+# Loading work.exh_4badd(behavior)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /exh_pipe_vhdl_tb/uut
+# End time: 19:29:07 on May 17,2016, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 1

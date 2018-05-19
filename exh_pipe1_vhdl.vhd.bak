@@ -1,0 +1,11 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+USE ieee.std_logic_signed.all;
+
+ENTITY exh_pipe1_vhdl IS
+	PORT(Mcand			:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  mPlier0		:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  Output			:OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+	 End exh_pipe1_vhdl;
+	 
+ARCHITECTURE structure OF exh_pipe1_vhdl IS
